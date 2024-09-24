@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="demo2ex.MainWindow"
+        Title="demo2ex">
+	<DockPanel>
+		<Border DockPanel.Dock="Top" >
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+				<TextBox Width="200" Name="SearchTextBox" ></TextBox>
+				<ComboBox Name="FilterComboBox"></ComboBox>
+				<ComboBox Name="SortComboBox"></ComboBox>
+			</StackPanel>
+		</Border>
+		<Border DockPanel.Dock="Bottom">
+			<TextBlock Name="kl"> </TextBlock>
+		</Border>
+		<Border>
+			<ListBox Name="ClientsListBox">
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<StackPanel Orientation="Vertical">
+							<StackPanel Orientation="Horizontal">
+								<TextBlock > </TextBlock>
+							</StackPanel>
+						</StackPanel>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+		</Border>
+	</DockPanel>
+</Window>
